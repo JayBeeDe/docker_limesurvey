@@ -1,7 +1,7 @@
 # LimeSurvey
 
 <p align="center">
-<img src="https://camo.githubusercontent.com/501daf06b5add2c579fa16769c70ffd6e22e483e/68747470733a2f2f7777772e6c696d657375727665792e6f72672f696d616765732f6c6f676f732f6c6f676f5f6d61696e2e706e67" width="150px" height="150px"/>
+<img src="https://camo.githubusercontent.com/501daf06b5add2c579fa16769c70ffd6e22e483e/68747470733a2f2f7777772e6c696d657375727665792e6f72672f696d616765732f6c6f676f732f6c6f676f5f6d61696e2e706e67" height="150px"/>
 </p>
 
 ## What is LimeSurvey?
@@ -57,7 +57,7 @@ This example shows a configuration behind a proxy, this is why the urlPrefix has
 
 Once finished, you can open your browser and you will see the home page:
 <p align="center">
-<img src="./img/home-page.png" width="150px" height="150px"/>
+<img src="./img/home-page.png" height="300px"/>
 </p>
 
 Go to [index.php?r=admin](index.php?r=admin) in order to login with the backofffice credentials previously set in the environnement variables.
@@ -65,7 +65,7 @@ Go to [index.php?r=admin](index.php?r=admin) in order to login with the backofff
 If needed, you will be first redirected to [index.php?r=admin/databaseupdate/sa/db](index.php?r=admin/databaseupdate/sa/db) in order to update the database. Run the update and wait, don't refresh your web browser during the update.
 
 <p align="center">
-<img src="./img/update-db.png" width="150px" height="150px"/>
+<img src="./img/update-db.png" height="300px"/>
 </p>
 
 That's it!
