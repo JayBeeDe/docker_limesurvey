@@ -40,6 +40,10 @@ LimeSurvey is the worldwide leading open source survey software as a professiona
 
 ## How to use this image
 
+<aside class="warning">
+Despite the fact that limesurvey is compatible with PostgreSQL and Microsoft SQL, this image only support MySQL database.
+</aside>
+
 ### LimeSurvey Full-Automatic Install
 
 First we start the mySQL container:
@@ -54,6 +58,8 @@ Then we start the limesurvey container (replace with the correct environnement v
 docker run -d -it --name limesurvey-ui --link limesurvey-db:mysql -e dbHost="limesurvey-db" -e dbName="myNiceDbName" -e dbUser="myNiceDbUserName" -e dbPass="myNiceDbPassword" -e backOfficeUser="myNiceBOUserName" -e backOfficePassword="myNiceBOPassword" -e backOfficeLanguage="fr" -e urlPrefix="/limesurvey/" --restart=always --hostname=limesurvey-ui jbd92/limesurvey:latest
 ```
 This example shows a configuration behind a proxy, this is why the urlPrefix has been set. You can set it to / or remove it if you don't use a configuration behind a proxy.
+
+Once you get the shell back, wait around 1 min the first time in order to get the database initialized.
 
 Once finished, you can open your browser and you will see the home page:
 <p align="center">
